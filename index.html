@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İngilizce Telaffuz Uygulaması</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-blue-900 text-white min-h-screen flex flex-col items-center justify-center p-6">
+  <header class="text-center mb-12">
+    <h1 class="text-5xl font-bold mb-4 flex items-center justify-center animate-pulse">
+      <span class="mr-3">🎓</span> İngilizce Telaffuz Pratiği
+    </h1>
+    <h2 class="text-2xl text-gray-300 font-semibold">Seviyeni Seç ve Konuşmaya Başla!</h2>
+  </header>
+
+  <div class="level-buttons flex flex-wrap justify-center gap-6 mb-12">
+    <button onclick="selectLevel('beginner')" class="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">Başlangıç Seviyesi</button>
+    <button onclick="selectLevel('intermediate')" class="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">Orta Seviye</button>
+    <button onclick="selectLevel('advanced')" class="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">Üst Seviye</button>
+  </div>
+
+  <div id="themes" class="hidden w-full max-w-3xl"></div>
+  <div id="quiz" class="hidden w-full max-w-3xl text-center"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
