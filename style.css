@@ -24,6 +24,9 @@ button:hover {
   width: 100%;
   text-align: left;
   font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
@@ -33,6 +36,15 @@ button:hover {
   background: linear-gradient(135deg, #374151, #4b5563);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Sıralama sayıları için stil */
+.theme-button span:first-child {
+  color: #a5b4fc; /* Sıralama sayıları ve tema adı için farklı bir renk */
+}
+
+.theme-button span:last-child {
+  color: #e5e7eb; /* Ok işareti için orijinal renk */
 }
 
 .sentence-card {
